@@ -5,8 +5,8 @@ import { Post } from './types';
 function Card({ title, url, explanation, date, copyright = '' }: Post) {
   const [isPostLiked, setIsPostLiked] = useState(false);
 
-  const handlePress = useCallback(
-    () => (isPostLiked ? setIsPostLiked(false) : setIsPostLiked(true)),
+  const handlePostLike = useCallback(
+    () => setIsPostLiked(!isPostLiked),
     [isPostLiked]
   );
 
@@ -18,7 +18,7 @@ function Card({ title, url, explanation, date, copyright = '' }: Post) {
       <span className='card-date'>{moment(date).format('LL')}</span>
       <img className='card-image' src={url} alt={title} />
       <p className='card-copyright'>{copyright}</p>
-      <button type='button' onClick={handlePress}>
+      <button type='button' onClick={handlePostLike}>
         heart me lol
       </button>
     </div>

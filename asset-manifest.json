@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.77683fcb.css",
-    "main.js": "/static/js/main.8e6ad158.js",
-    "static/media/loading_animation.png": "/static/media/loading_animation.e1f9b9c9d6ee1660a783.png",
-    "static/media/error.png": "/static/media/error.ba87096e3b183e1ab25c.png",
-    "static/media/no_image.png": "/static/media/no_image.997a1be8e1f42426d1c6.png",
-    "index.html": "/index.html",
-    "static/media/iconmonstr-favorite.svg": "/static/media/iconmonstr-favorite.3cde5152315c43e331bcf868e3f98183.svg",
-    "main.77683fcb.css.map": "/static/css/main.77683fcb.css.map",
-    "main.8e6ad158.js.map": "/static/js/main.8e6ad158.js.map"
+    "main.css": "/spacestagram/static/css/main.77683fcb.css",
+    "main.js": "/spacestagram/static/js/main.c1e4c4b6.js",
+    "static/media/loading_animation.png": "/spacestagram/static/media/loading_animation.e1f9b9c9d6ee1660a783.png",
+    "static/media/error.png": "/spacestagram/static/media/error.ba87096e3b183e1ab25c.png",
+    "static/media/no_image.png": "/spacestagram/static/media/no_image.997a1be8e1f42426d1c6.png",
+    "index.html": "/spacestagram/index.html",
+    "static/media/iconmonstr-favorite.svg": "/spacestagram/static/media/iconmonstr-favorite.3cde5152315c43e331bcf868e3f98183.svg",
+    "main.77683fcb.css.map": "/spacestagram/static/css/main.77683fcb.css.map",
+    "main.c1e4c4b6.js.map": "/spacestagram/static/js/main.c1e4c4b6.js.map"
   },
   "entrypoints": [
     "static/css/main.77683fcb.css",
-    "static/js/main.8e6ad158.js"
+    "static/js/main.c1e4c4b6.js"
   ]
 }

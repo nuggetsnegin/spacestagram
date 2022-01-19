@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ebebeb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span,
+.card-copyright,
+.error-message {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+.card-hashtag {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.card {
+  border: 1.75px solid #ebebeb;
+  padding: 20px 16px;
+  background-color: #fcfcfc;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  border-radius: 5px;
+}
+
+.card-copyright {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-extra-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 12px;
+  color: grey;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-container p {
+  text-align: center;
+}
+
+.error-container img {
+  width: 50%;
+  margin: 0 auto;
+  object-fit: contain;
 }

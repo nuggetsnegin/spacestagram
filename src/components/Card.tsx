@@ -1,6 +1,6 @@
 import moment from 'moment';
 import React, { useState, useCallback } from 'react';
-import { Post } from './types';
+import { Post } from '../types';
 
 function Card({ title, url, explanation, date, copyright = '' }: Post) {
   const [isPostLiked, setIsPostLiked] = useState(false);

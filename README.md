@@ -1,8 +1,19 @@
-# Spacetagram
+# Spacestagram
 
-Built using Create-React-App, TypeScript and Procreate for the loading gif. To run the app:
+Negin's Spacestagram was built with [my cat Jiro](img goes here) and:
 
-- Clone the repro
+- [Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Airbnb's eslint rules](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+- [iconmonstr](https://iconmonstr.com/license/)
+- [Procreate](https://procreate.art/) for my loading indicator of me and Jiro traversing space
+- [Google Fonts](https://fonts.google.com/)
+
+364a60
+
+## To run the app:
+
+- Clone the repo
 - Install depedencies using `npm i` or `npm install`
 - Run the app locally using `npm start` or visit the live link(@todo)
 

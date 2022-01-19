@@ -28,7 +28,7 @@ function App() {
   return (
     <div className='app'>
       <header className='header'>
-        <h1>Spacetagram</h1>
+        <h1>Spacestagram</h1>
       </header>
       <Container isLoading={isLoading} data={data} />
     </div>

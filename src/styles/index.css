@@ -96,12 +96,7 @@ button {
   object-fit: contain;
 }
 
-.animate {
-  animation: heart-burst 0.8s steps(28) forwards;
-}
-
-.favorite-icon:focus,
-.favorite-icon:hover {
+.animate-heart {
   animation: wobble 1.25s 1;
 }
 

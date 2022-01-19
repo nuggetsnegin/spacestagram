@@ -7,11 +7,14 @@ import errorImage from '../assets/no_image.png';
 
 function Card({ title, url, explanation, date, copyright }: Post) {
   const [isPostLiked, setIsPostLiked] = useState(false);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
-  const handlePostLike = useCallback(
-    () => setIsPostLiked(!isPostLiked),
-    [isPostLiked]
-  );
+  const handlePostLike = useCallback(() => {
+    setIsPostLiked(!isPostLiked);
+    setShouldAnimate(true);
+  }, [isPostLiked, shouldAnimate]);
+
+  const handleAnimationEnd = useCallback(() => setShouldAnimate(false), []);
 
   return (
     <div className='card'>
@@ -23,7 +26,12 @@ function Card({ title, url, explanation, date, copyright }: Post) {
       )}
       <div className='card-extra-info'>
         <span className='card-date'>Posted on {moment(date).format('LL')}</span>
-        <button type='button' onClick={handlePostLike}>
+        <button
+          type='button'
+          onClick={handlePostLike}
+          className={shouldAnimate ? 'animate-heart' : ''}
+          onAnimationEnd={handleAnimationEnd}
+        >
           <FavoriteIcon
             className='favorite-icon'
             fill={

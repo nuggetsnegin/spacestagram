@@ -51,6 +51,7 @@ button {
   border: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 .card {
@@ -93,4 +94,28 @@ button {
   width: 50%;
   margin: 0 auto;
   object-fit: contain;
+}
+
+.animate {
+  animation: heart-burst 0.8s steps(28) forwards;
+}
+
+.favorite-icon:focus,
+.favorite-icon:hover {
+  animation: wobble 1.25s 1;
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

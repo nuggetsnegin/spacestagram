@@ -25,6 +25,7 @@ function Card({ title, url, explanation, date, copyright }: Post) {
         <span className='card-date'>Posted on {moment(date).format('LL')}</span>
         <button type='button' onClick={handlePostLike}>
           <FavoriteIcon
+            className='favorite-icon'
             fill={
               isPostLiked
                 ? HEART_COLORS.liked_background

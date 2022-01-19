@@ -33,6 +33,7 @@ h1 {
   font-size: 4rem;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
+  color: #364a60;
 }
 
 h2 {
@@ -74,7 +75,7 @@ button {
   flex-direction: row;
   align-items: center;
   padding-top: 12px;
-  color: grey;
+  color: #808080;
 }
 
 .error-container {
@@ -85,6 +86,7 @@ button {
 
 .error-container p {
   text-align: center;
+  color: #364a60;
 }
 
 .error-container img {

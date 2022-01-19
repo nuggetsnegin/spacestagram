@@ -7,4 +7,5 @@ export const COLORS = {
   heart_unliked_stroke: '#171717',
 } as const;
 
-export const getIsURLAVideo = (url: String) => !!url.includes('youtube');
+export const getIsValidImageURL = (url: String) =>
+  !!url.toLowerCase().includes('jpg');

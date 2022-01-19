@@ -2,7 +2,7 @@ import moment from 'moment';
 import React, { useState, useCallback } from 'react';
 import { Post } from '../types';
 import { ReactComponent as FavoriteIcon } from '../assets/iconmonstr-favorite.svg';
-import { COLORS, getIsValidImageURL } from '../utils';
+import { HEART_COLORS, getIsValidImageURL } from '../utils';
 import errorImage from '../assets/no_image.png';
 
 function Card({ title, url, explanation, date, copyright }: Post) {
@@ -25,14 +25,15 @@ function Card({ title, url, explanation, date, copyright }: Post) {
         <span className='card-date'>Posted on {moment(date).format('LL')}</span>
         <button type='button' onClick={handlePostLike}>
           <FavoriteIcon
-            fill={isPostLiked ? COLORS.heart_liked_bg : COLORS.heart_unliked_bg}
-            stroke={
+            fill={
               isPostLiked
-                ? COLORS.heart_like_stroke
-                : COLORS.heart_unliked_stroke
+                ? HEART_COLORS.liked_background
+                : HEART_COLORS.unliked_background
             }
-            width={24}
-            height={24}
+            stroke={HEART_COLORS.stroke}
+            strokeWidth={2}
+            width={40}
+            height={26}
           />
         </button>
       </div>

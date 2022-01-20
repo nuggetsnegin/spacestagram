@@ -1,5 +1,7 @@
 # Spacestagram
 
+![Spacestagram](https://i.imgur.com/qSGtbw8.png)
+
 Negin's [Spacestagram](https://nuggetsnegin.github.io/spacestagram/) was built with [my cat Jiro](https://i.imgur.com/QVvbu5r.png) and:
 
 - [Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html)

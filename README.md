@@ -15,7 +15,7 @@ Negin's [Spacestagram](https://nuggetsnegin.github.io/spacestagram/) was built w
 
 - Clone the repo
 - Install depedencies using `npm i` or `npm install`
-- Run the app locally using `npm start` or visit the live link(@todo)
+- Run the app locally using `npm start` and update the `API_KEY` with your key in the `utils` file
 
 ## Future considerations
 
